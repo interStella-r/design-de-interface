@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 
 <head>
@@ -53,4 +54,61 @@
     </form>
 </body>
 
+=======
+<html>
+
+<head>
+    <title>Exemplo 20</title>
+</head>
+
+<body>
+    <form method="post" action="formulario.php">
+        <input name="assunto" type="hidden" value="Class" />
+        <fieldset>
+            <legend>Escolaridade</legend>
+            <label for="grau">Grau</label>
+            <select name="grauescolaridade" id="grau">
+                <option value="gd">Graduação</option>
+                <option value="mt">Mestrado</option>
+                <option value="dt" selected="selected">Doutorado</option>
+            </select>
+            <br />
+            <label for="idestudante">ID do Estudante</label>
+            <input type="password" name="idestudante" />
+        </fieldset>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="pn">Primeiro Nome</label>
+            <input type="text" name="pn" id="pn" />
+            <br />
+            <label for="sn">Segundo Nome</label>
+            <input type="text" name="sn" id="sn" /> <br />
+            Gênero:
+            <input name="genero" type="radio" id="gm" value="m" />
+            <label for="gm">Masculino</label>
+            <input name="genero" type="radio" id="gf" value="f" />
+            <label for="gf">Feminino</label>
+            <br />
+            Esportes preferidos: <br />
+            <input id="fu" type="checkbox" name="esporte1" value="futebol">
+            <label for="fu">Futebol</label> <br>
+            <input id="na" type="checkbox" name="esporte2" value="natacao">
+            <label for="na">Natação</label> <br>
+            <input id="vo" type="checkbox" name="esporte3" value="volei">
+            <label for="vo">Vôlei</label> <br>
+            <br /> <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+
+        </fieldset>
+        <p> <textarea name="termos" cols="30" rows="4" readonly="readonly">Termos e condições...
+</textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Enviar" />
+            <input type="reset" value="Limpar" />
+        </p>
+    </form>
+</body>
+
+>>>>>>> cc2ea752cd18136a5d961eae1d787aaab50c3fe1
 </html>
