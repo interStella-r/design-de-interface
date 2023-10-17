@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function confirmacao() {
+            var resposta = confirm("Deixar o curso?");
+            if (resposta) {
+                alert("Até outro dia!");
+                window.location = "http://www.google.com/";
+            }
+            else
+                alert("Muito obrigado por permanecer no curso!");
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" onclick="confirmacao()" value="Deixar o curso">
+    </form>
+</body>
+
+</html>
