@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        html,
+        body {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        main {
+            width: 30rem;
+            margin: 1rem auto;
+        }
+
+        #resposta {
+            background-color: orangered;
+            padding: 1rem;
+            margin-top: 1rem;
+            width: 25rem;
+            height: 1.5rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        input,
+        button {
+            padding: 0.5rem;
+        }
+    </style>
+    <script type="text/javascript">
+        function precoProduto() {
+            var codigo = parseFloat(codigo_produto.value);
+
+            switch (codigo) {
+                case 1:
+                    mensagem = "Sapato: R$ 99,99."
+                    break;
+                case 2:
+                    mensagem = "Bolsa: R$ 103,89."
+                    break;
+                case 3:
+                    mensagem = "Camisa: R$ 49,98."
+                    break;
+                case 4:
+                    mensagem = "Calça: R$ 89,72."
+                    break;
+                case 5:
+                    mensagem = "Blusa: R$ 97,35."
+                    break;
+                default:
+                    mensagem = "Código informado incorretamente"
+            }
+
+            resposta.innerHTML = mensagem;
+        }
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>Preço dos Produtos</h1>
+        <input id="codigo_produto" type="number" placeholder="Informe o código">
+
+        <button onclick="precoProduto()">Ok</button>
+
+        <div id="resposta"></div>
+    </main>
+</body>
+
+</html>

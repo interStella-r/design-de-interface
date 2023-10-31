@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        html,
+        body {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        main {
+            width: 30rem;
+            margin: 1rem auto;
+        }
+
+        #resposta {
+            background-color: orangered;
+            padding: 1rem;
+            margin-top: 1rem;
+            width: 25rem;
+            height: 1.5rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        input,
+        button {
+            padding: 0.5rem;
+        }
+    </style>
+    <script type="text/javascript">
+        function calcularIMC() {
+            var peso = parseFloat(peso_usr.value);
+            var altura = parseFloat(altura_usr.value);
+
+            var imc = peso / Math.pow(altura, 2);
+            var mensagem = "";
+
+            if (imc < 20)
+                mensagem = "Abaixo do Peso";
+            else if (imc >= 20 && imc < 25)
+                mensagem = "Normal";
+            else if (imc >= 25 && imc < 30)
+                mensagem = "Sobrepeso";
+            else if (imc >= 30 && imc < 35)
+                mensagem = "Obesidade grau I";
+            else if (imc >= 35 && imc < 40)
+                mensagem = "Obesidade grau II";
+            else if (imc >= 40)
+                mensagem = "Obesidade grau III";
+
+            resposta.innerHTML = mensagem;
+        }
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>Calculadora de IMC</h1>
+        <input id="peso_usr" type="text" placeholder="Informe seu peso">
+        <input id="altura_usr" type="text" placeholder="Informe sua altura">
+
+        <button onclick="calcularIMC()">IMC</button>
+
+        <div id="resposta"></div>
+    </main>
+</body>
+
+</html>
