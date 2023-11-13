@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html,
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        main {
+            width: 33rem;
+            margin: 5rem auto;
+            padding: 1rem;
+        }
+
+        #resposta {
+            background-color: rgb(102, 2, 122);
+            padding: 1rem;
+            margin-top: 1rem;
+            width: 30rem;
+            border-radius: 1rem;
+            color: rgb(228, 199, 228);
+            box-shadow: 4px 4px rgb(218, 218, 218);
+        }
+    </style>
+    <title>Teorema de Pitágoras</title>
+</head>
+
+<body>
+    <main>
+        <h1>Teorema de Pitágoras</h1>
+        <div id="resposta"></div>
+        <script type="text/javascript">
+            var cateto1 = parseInt(prompt("Informe o valor de um cateto"));
+            var cateto2 = parseInt(prompt("Informe o segundo valor de um cateto"));
+            var cateto1elevado = cateto1 * cateto1;
+            var cateto2elevado = cateto2 * cateto2;
+            var soma = cateto1elevado + cateto2elevado
+            var raiz = Math.sqrt(soma)
+
+            resposta.innerHTML = "O valor da hipotenusa é: " + hipotenusa;
+        </script>
+    </main>
+</body>
+
+</html>

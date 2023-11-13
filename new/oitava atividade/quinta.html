@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        html,
+        body {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        main {
+            width: 50rem;
+            margin: 1.5rem auto;
+        }
+
+        #resposta {
+            background-color: orangered;
+            padding: 1rem;
+            margin-top: 1rem;
+            width: 40rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        input,
+        button {
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Máquina de Salgados, Sucos e Refrigerantes</h1>
+        <div id="resposta"></div>
+
+        <script type="text/javascript">
+            var compra = parseInt(prompt("Informe o valor da compra"));
+            var pago = parseInt(prompt("Informe o valor pago"));
+            var troco, qtd50, qtd20, qtd10, qtd5, qtd2;
+
+            resposta.innerHTML = "Valor da compra: R$ " + compra;
+            resposta.innerHTML += "<br> Valor pago: R$ " + pago;
+
+            if (compra > pago) {
+                resposta.innerHTML = "O valor pago é insuficiente para realizar a compra!";
+            } else {
+                troco = pago - compra;
+                resposta.innerHTML += "<br> Troco: R$ " + troco;
+
+                qtd50 = parseInt(troco / 50);
+                troco = troco % 50;
+
+                qtd20 = parseInt(troco / 20);
+                troco = troco % 20;
+
+                qtd10 = parseInt(troco / 10);
+                troco = troco % 10;
+
+                qtd5 = parseInt(troco / 5);
+                troco = troco % 5;
+
+                qtd2 = parseInt(troco / 2);
+                troco = troco % 2;
+
+                resposta.innerHTML += "<br><br> Quantidade de notas de R$ 50,00: " + qtd50;
+                resposta.innerHTML += "<br> Quantidade de notas de R$ 20,00: " + qtd20;
+                resposta.innerHTML += "<br> Quantidade de notas de R$ 10,00: " + qtd10;
+                resposta.innerHTML += "<br> Quantidade de notas de R$ 5,00: " + qtd5;
+                resposta.innerHTML += "<br> Quantidade de notas de R$ 2,00: " + qtd2;
+                resposta.innerHTML += "<br> Quantidade de notas de R$ 1,00: " + troco;
+            }
+        </script>
+
+    </main>
+</body>
+
+</html>

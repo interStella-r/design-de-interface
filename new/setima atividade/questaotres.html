@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html,
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        main {
+            width: 33rem;
+            margin: 5rem auto;
+            padding: 1rem;
+        }
+
+        #resposta {
+            background-color: rgb(122, 2, 68);
+            padding: 1rem;
+            margin-top: 1rem;
+            width: 30rem;
+            border-radius: 1rem;
+            color: rgb(255, 175, 255);
+        }
+    </style>
+    <title>Salário</title>
+</head>
+
+<body>
+    <main>
+        <h1>Temperatura em Fahrenheit</h1>
+        <div id="resposta"></div>
+        <script type="text/javascript">
+            var celcius = parseInt(prompt("Informe uma temperatura em Celcius (Cº)"));
+            var fair = celcius * 1.8
+            var novatemperatura = fair + 32
+
+
+            resposta.innerHTML = "A temperatura em Fahrenheit " + novatemperatura;
+        </script>
+    </main>
+</body>
+
+</html>

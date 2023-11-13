@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html,
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        main {
+            width: 33rem;
+            margin: 5rem auto;
+            padding: 1rem;
+        }
+
+        #resposta {
+            background-color: rgb(13, 73, 26);
+            padding: 1rem;
+            margin-top: 1rem;
+            width: 30rem;
+            color: white;
+        }
+    </style>
+    <title>Salário</title>
+</head>
+
+<body>
+    <main>
+        <h1>Salário com aumento</h1>
+        <div id="resposta"></div>
+        <script type="text/javascript">
+            var salarioatual = parseInt(prompt("Informe seu salário"));
+            var percentual = 0.25;
+            var aumento = salarioatual * percentual
+            var novosalario = salarioatual + aumento
+
+
+            resposta.innerHTML = "Sua aumento de salário foi de 25%, seu novo salário é " + novosalario;
+        </script>
+    </main>
+</body>
+
+</html>
