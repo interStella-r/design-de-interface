@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Papelaria</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min
+.js"></script>
+    <style>
+        .img {
+            margin-left: 1rem;
+        }
+
+        .container-xl {
+            width: 20rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar {
+            background-color: rgb(175, 207, 240);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="logo.jpg" alt="Bootstrap" width="30" height="24">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Página Incial</a>
+                        <a class="nav-link" href="#">Categorias</a>
+                        <a class="nav-link" href="#">Promoções 11.11</a>
+                    </div>
+                </div>
+                <div class="container-xl">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="carrosel1.jpg" class="d-block w-100" alt="oi" height="550">
+                </div>
+                <div class="carousel-item">
+                    <img src="carrosel2.jpg" class="d-block w-100" alt="oi" height="550">
+                </div>
+                <div class="carousel-item">
+                    <img src="carrosel3.jpg" class="d-block w-100" alt="oi" height="550">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="bg-light p-5 text-center">
+            <h2>Papelaria</h2>
+            <p>Venha conhecer nossa loja, e os produtos maravilhosos do mundo da papelaria!</p>
+        </div>
+    </main>
+</body>
+
+</html>
