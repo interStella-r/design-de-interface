@@ -12,98 +12,100 @@
 </head>
 
 <body>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+	<header>
+		<div class="logoImg">
+			<img src="logo.png" alt="Maria Chocolate" height="90" />
+		</div>
+		<div class="titulo">
+			<h2>Confeitando para a alegria da sua vida...</h2>
+		</div>
+	</header>
+	<nav>
+		<ul class="list-group list-group-horizontal">
+			<a class="list-group-item" href="#">Home</a>
+			<a class="list-group-item" href="#">Bolos</a>
+			<a class="list-group-item" href="#">Tortas</a>
+			<a class="list-group-item" href="#">Festas</a>
+			<a class="list-group-item" href="#">Contatos</a>
+		</ul>
+	</nav>
 	<main>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-			crossorigin="anonymous"></script>
-		<header>
-			<div class="logoImg">
-				<img src="logo.png" alt="Maria Chocolate" height="90" />
-			</div>
-			<div class="titulo">
-				<h2>Confeitando para a alegria da sua vida...</h2>
-			</div>
-		</header>
-		<nav>
-			<ul class="list-group list-group-horizontal">
-				<a class="list-group-item" href="#">Home</a>
-				<a class="list-group-item" href="#">Bolos</a>
-				<a class="list-group-item" href="#">Tortas</a>
-				<a class="list-group-item" href="#">Festas</a>
-				<a class="list-group-item" href="#">Contatos</a>
-			</ul>
-		</nav>
-		<section>
-			<div class="produto">
-				<div class="produtoImagem">
-					<img src="imagem1.png" alt="Bolo" height="135">
-				</div>
-				<div class="detalhes">
-					<p>Bolo Delicia</p>
-					<span class="preco">R$ 136,90</span>
+		<div class="row row-cols-md-5">
+			<div class="col">
+				<div class="card">
+					<img src="imagem1.png" class="card-img-top" alt="Bolo Delicia">
+					<div class="card-body">
+						<h5 class="card-title">Bolo Delicia</h5>
+						<p class="card-text">R$ 136,90</p>
+					</div>
 				</div>
 			</div>
-			<div class="produto">
-				<div class="produtoImagem">
-					<img src="imagem2.png" alt="Bolo" height="135">
-				</div>
-				<div class="detalhes">
-					<p>Floresta Negra</p>
-					<span class="preco">R$ 144,50</span>
-				</div>
-			</div>
-			<div class="produto">
-				<div class="produtoImagem">
-					<img src="imagem3.png" alt="Bolo" height="135">
-				</div>
-				<div class="detalhes">
-					<p>Cupcakes (3 unidades)</p>
-					<span class="preco">R$ 27,90</span>
+			<div class="col">
+				<div class="card">
+					<img src="imagem2.png" class="card-img-top" alt="Floresta Negra">
+					<div class="card-body">
+						<h5 class="card-title">Floresta Negra</h5>
+						<p class="card-text">R$ 144,50</p>
+					</div>
 				</div>
 			</div>
-			<div class="produto">
-				<div class="produtoImagem">
-					<img src="imagem4.png" alt="Bolo" height="135">
-				</div>
-				<div class="detalhes">
-					<p>Torta Holandesa</p>
-					<span class="preco">R$ 122,00</span>
-				</div>
-			</div>
-			<div class="produto">
-				<div class="produtoImagem">
-					<img src="imagem5.png" alt="Bolo" height="135">
-				</div>
-				<div class="detalhes">
-					<p>Bolinho anão</p>
-					<span class="preco">R$ 99,90</span>
+			<div class="col">
+				<div class="card">
+					<img src="imagem3.png" class="card-img-top" alt="Cupcakes">
+					<div class="card-body">
+						<h5 class="card-title">Cupcakes (3 unidades)</h5>
+						<p class="card-text">R$ 27,90</p>
+					</div>
 				</div>
 			</div>
-			<div class="produto">
-				<div class="produtoImagem">
-					<img src="imagem6.png" alt="Bolo" height="135">
-				</div>
-				<div class="detalhes">
-					<p>Torta Nobre (Fatia)</p>
-					<span class="preco">R$ 13,90</span>
-				</div>
-			</div>
-			<div class="produto">
-				<div class="produtoImagem">
-					<img src="imagem7.png" alt="Bolo" height="135">
-				</div>
-				<div class="detalhes">
-					<p>Torta de Maracujá</p>
-					<span class="preco">R$ 123,45</span>
+			<div class="col">
+				<div class="card">
+					<img src="imagem4.png" class="card-img-top" alt="Torta Holandesa">
+					<div class="card-body">
+						<h5 class="card-title">Torta Holandesa</h5>
+						<p class="card-text">R$ 122,00</p>
+					</div>
 				</div>
 			</div>
-		</section>
-		<footer>
-			<p>Desenvolvido como exercício da UC Usabilidade, Desenvolvimento Web, Mobile e Jogos. ©Copyright 2022.
-				Todos os
-				Direitos Reservados.</p>
-		</footer>
+			<div class="col">
+				<div class="card">
+					<img src="imagem5.png" class="card-img-top" alt="Bolinho anão">
+					<div class="card-body">
+						<h5 class="card-title">Bolinho anão</h5>
+						<p class="card-text">R$ 99,90</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="imagem6.png" class="card-img-top" alt="Torta Nobre">
+					<div class="card-body">
+						<h5 class="card-title">Torta Nobre (Fatia)</h5>
+						<p class="card-text">R$ 13,90</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="imagem7.png" class="card-img-top" alt="Torta de Maracujá">
+					<div class="card-body">
+						<h5 class="card-title">Torta de Maracujá</h5>
+						<p class="card-text">R$ 123,45</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
+	<footer>
+		<p>Desenvolvido como exercício da UC Usabilidade, Desenvolvimento Web, Mobile e Jogos. ©Copyright 2022.
+			Todos os
+			Direitos Reservados.</p>
+	</footer>
+
 </body>
 
 </html>

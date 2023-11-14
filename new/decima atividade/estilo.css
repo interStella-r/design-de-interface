@@ -6,7 +6,12 @@ header {
     font-style: italic;
     font-size: 30px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.titulo {
+    text-align: center;
 }
 
 nav {
@@ -15,6 +20,8 @@ nav {
     padding: 0.3rem;
     background-color: #f0b0d0;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 html,
@@ -22,8 +29,50 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.ul {
+
+footer {
+    background-color: #ffbbdd;
     display: flex;
     justify-content: center;
-    align-items: center;
+    font-size: 12px;
+    padding: 0.5rem;
+    color: white;
+}
+
+main {
+    margin: 1rem;
+    display: flex;
+    align-items: end;
+}
+
+
+
+.card-img-top {
+    height: 200px;
+    width: 200px;
+    padding: 1rem;
+    margin-left: 1rem;
+
+}
+
+.logoImg {
+    width: 7.83rem;
+    height: 5.2rem;
+}
+
+.card {
+    width: 15rem;
+}
+
+.card-body {
+    background-color: #f0f0f0;
+}
+
+.card-title {
+    text-align: center;
+    font-size: medium;
+}
+
+.card-text {
+    text-align: center;
 }

@@ -26,6 +26,9 @@
             color: rgb(228, 199, 228);
             box-shadow: 4px 4px rgb(218, 218, 218);
         }
+        span{
+            color: yellow;
+        }
     </style>
     <title>Circulo</title>
 </head>
@@ -36,9 +39,14 @@
         <div id="resposta"></div>
         <script type="text/javascript">
             var raio = parseFloat(prompt("Informe o valor de um raio (R)"));
-            var comprimento = 2 * raio * console.log(Math.PI);
 
-            resposta.innerHTML = "O valor do comprimento da esfera é: " + comprimento;
+            var comprimento = 2 * raio * Math.PI; 
+            var area = Math.PI * Math.pow(raio, 2);
+            var volume = 3/4 * Math.PI * Math.pow(raio, 3);
+
+            resposta.innerHTML = "O valor do comprimento da esfera é: <span>" + comprimento.toFixed(2) + "</span>";
+            resposta.innerHTML += "<br> O valor da area da esfera é: <span>" + area.toFixed(2) + "</span>";
+            resposta.innerHTML += "<br> O valor do volume da esfera é: <span>" + volume.toFixed(2) + "</span>";
         </script>
     </main>
 </body>

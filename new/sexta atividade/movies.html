@@ -6,56 +6,55 @@
     <title>Cine Flix</title>
     <script src="https://kit.fontawesome.com/d55d76bc47.js" crossorigin="anonymous"></script>
     <style>
-        footer {
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
             margin: 0rem;
-            padding: 2rem;
-            width: 100%;
-            background-color: brown;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /*width: 100vw;*/
         }
 
-        header {
-            width: 100%;
-            padding: 2rem;
-            align-items: center;
-            justify-content: center;
-            background-color: brown;
-            display: flex;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        img {
+            /*178px / 16px = 11.125rem;*/
+            width: 11.125rem;
+            /*283px / 16px = 17.6875rem;*/
+            height: 17.6875rem;
+            margin-right: 1rem;
         }
 
         main {
-            width: 100%;
-            padding: 6.8rem;
-            background-color: black;
             display: flex;
-            align-items: center;
-            justify-content: baseline;
+            padding: 0.5rem;
+            background-color: black;
+            min-height: 28.1rem;
+        }
+
+        header {
+            background-color: brown;
+            padding: 2rem;
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: brown;
+            padding: 1rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: aliceblue;
-        }
-
-        .filme {
-            height: 10px;
-            width: 5px;
-        }
-
-        body {
-            margin: 0rem;
-            width: 100vw;
+            font-size: 0.75rem;
         }
     </style>
 </head>
 
 <body>
-    <header>
+    <header class="fundo-principal">
         Cine FliX
     </header>
     <main class="container">
-        <div class="filme"><img src="foto.jpg" alt="Barbie"></div>
+        <div class="filme"><img src="barbie.jpeg" alt="Barbie"></div>
         <div class="filme"><img src="oppe.jpg" alt="nsei"></div>
     </main>
-    <footer>
+    <footer class="fundo-principal">
         <section class="nome">Cine FliX</section>
         <section class="endereco">
             Avenida Afonso Pena, n. 1.800, Centro, Belo Horizonte, MG, Brasil, CEP.:
