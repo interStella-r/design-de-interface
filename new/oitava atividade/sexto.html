@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min
+.js"></script>
+    <style>
+        main {
+            background-color: gainsboro;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 3rem auto;
+            padding: 1.5rem 2rem;
+            width: 55rem;
+            border: 1px solid grey;
+            border-radius: 25px;
+        }
+
+        body {
+            background-color: rgb(250, 250, 250);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container mt-3">
+            <h3>Faça o Login</h3>
+            <p>Entre na sua conta para prosseguir com sua compra.</p>
+            <form action="https://www.google.com.br" class="was-validated">
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Informe o e-mail" name="email_usuario"
+                        required>
+                    <div class="valid-feedback">E-mail informado corretamente.</div>
+                    <div class="invalid-feedback">Por favor, preencha o compo 'e-mail'.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="senha" placeholder="Informe a senha"
+                        name="senha_usuario" required>
+                    <div class="valid-feedback">Senha informada corretamente.</div>
+                    <div class="invalid-feedback">Por favor, preencha o compo 'senha'.</div>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="confirmacao" name="confirmacao_usuario"
+                        required>
+                    <label class="form-check-label" for="confirmacao">Aceito os termos de uso.</label>
+                    <div class="valid-feedback">Confirmação preenchida.</div>
+                    <div class="invalid-feedback">É necessário confirmar a aceitação dos
+                        termos.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

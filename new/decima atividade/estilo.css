@@ -1,0 +1,29 @@
+header {
+    padding: 1rem;
+    background-color: #ffbbdd;
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
+    font-style: italic;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 0.3rem;
+    background-color: #f0b0d0;
+    color: white;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
