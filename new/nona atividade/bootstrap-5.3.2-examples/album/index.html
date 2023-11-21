@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.118.2">
-  <title>Album example · Bootstrap v5.3</title>
+  <title>Papelaria Van Gogh</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
@@ -101,6 +101,32 @@
     /***************************************
       dps dq q pode alterar acho? 
       *********************************/
+
+    section {
+      background-color: blue;
+    }
+
+    main {
+      background-color: rgb(62, 62, 248);
+    }
+
+    header {
+      background-color: chocolate;
+    }
+
+    footer {
+      background-color: chocolate;
+    }
+
+    .card {
+      max-height: 450px;
+      background-color: rgb(148, 148, 148);
+    }
+
+    .logo {
+      height: 4rem;
+      width: 10rem;
+    }
   </style>
 
 
@@ -176,8 +202,8 @@
   </div>
 
 
-  <header data-bs-theme="dark">
-    <div class="collapse text-bg-dark" id="navbarHeader">
+  <header>
+    <div class="collapse text" id="navbarHeader">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
@@ -205,21 +231,16 @@
               <li><a href="#" class="text-white">Escritório</a></li>
               <li><a href="#" class="text-white">Papelaria</a></li>
               <li><a href="#" class="text-white">Organização</a></li>
+              <li><a href="#" class="text-white">Arte </a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="navbar navbar-dark shadow-sm">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
-            viewBox="0 0 24 24">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-            <circle cx="12" cy="13" r="4" />
-          </svg>
-          <strong>Informações</strong>
+          <img class="logo" src="logo.PNG" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
           aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -231,20 +252,16 @@
 
   <main>
 
-    <section class="py-5 text-center container">
+    <section class="py-5 text-center container-fluid">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light">Van Gogh Papelaria</h1>
           <p class="lead text-body-secondary">A direção certa para suas compras!</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
         </div>
       </div>
     </section>
 
-    <div class="album py-5 bg-body-tertiary">
+    <div class="album py-5">
       <div class="container">
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -254,17 +271,16 @@
                 role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
+                  dy=".3em">Apontador C/ Depósito 1 Furo Coelho TILIBRA</text>
               </svg>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Apontador C/ Depósito 1 Furo Coelho TILIBRA</p>
+                <p>A Partir de: <span style="font-size: 23px; font-weight: bold;">R$ 8,90 </span>cada</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
+                  <p class="h5"><span class="badge bg-secondary">Promoção</span></p>
                 </div>
               </div>
             </div>
@@ -274,18 +290,18 @@
               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
                 role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Brush
+                  Pen Pastel 6 Unidades NEWPEN
+                </text>
               </svg>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Brush Pen Pastel 6 Unidades NEWPEN</p>
+                <p>A Partir de: <span style="font-size: 23px; font-weight: bold;">R$ 35,90 </span>cada</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
+                  <p class="h5"><span class="badge bg-secondary">Poucas unidades!</span></p>
                 </div>
               </div>
             </div>
@@ -294,83 +310,18 @@
             <div class="card shadow-sm">
               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
                 role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
+                <title>Bloco Desenho A4 200G/M² CANSON 20FLS</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Bloco
+                  Desenho A4 200G/M² CANSON 20FLS</text>
               </svg>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Bloco Desenho A4 200G/M² CANSON 20FLS</p>
+                <p>A Partir de: <span style="font-size: 23px; font-weight: bold;">R$ 28,90 </span>cada</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
+                  <p class="h5"><span class="badge bg-secondary">Novidade</span></p>
                 </div>
               </div>
             </div>
@@ -382,17 +333,97 @@
                 role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
+                  dy=".3em">Apontador com Depósito 1 Furo Coelho Croc Croc MAPED</text>
               </svg>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Apontador com Depósito 1 Furo Coelho Croc Croc MAPED</p>
+                <p>A Partir de: <span style="font-size: 23px; font-weight: bold;">R$ 14,90 </span>cada</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
+                  <p class="h5"><span class="badge bg-secondary">Novidade</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Caneta
+                  Broadline Triplus 10 Unidades 0.8mm STAEDTLER</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Caneta Broadline Triplus 10 Unidades 0.8mm STAEDTLER</p>
+                <p>A Partir de: <span style="font-size: 23px; font-weight: bold;">R$ 49,90 </span>cada</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
+                  </div>
+                  <p class="h5"><span class="badge bg-secondary">Promoção</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Marca
+                  Texto Glitter Flash TRIS</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Marca Texto Glitter Flash TRIS</p>
+                <p>A Partir de: <span style="font-size: 23px; font-weight: bold;">R$ 11,90 </span>cada</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
+                  </div>
+                  <p class="h5"><span class="badge bg-secondary">De volta ao estoque</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Lapiseira 0.3MM Técnica Sharp P203 PENTEL</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Lapiseira 0.3MM Técnica Sharp P203 PENTEL</p>
+                <p>A Partir de: <span style="font-size: 23px; font-weight: bold;">R$ 29,90 </span>cada</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
+                  </div>
+                  <p class="h5"><span class="badge bg-secondary">Novidade</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Mini
+                  Estilete De Nuvem Compacto E Portátil TILIBRA</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Mini Estilete De Nuvem Compacto E Portátil TILIBRA</p>
+                <p>A Partir de: <span style="font-size: 23px; font-weight: bold;">R$ 11,90 </span>cada</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
+                  </div>
+                  <p class="h5"><span class="badge bg-secondary">Promoção</span></p>
                 </div>
               </div>
             </div>
@@ -403,38 +434,16 @@
                 role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
+                  dy=".3em">Corretivo Nuvem 5MM X 5M TILIBRA</text>
               </svg>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Corretivo Nuvem 5MM X 5M TILIBRA</p>
+                <p>A Partir de: <span style="font-size: 23px; font-weight: bold;">R$ 12,90 </span>cada</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
+                  <p class="h5"><span class="badge bg-secondary">Novidade</span></p>
                 </div>
               </div>
             </div>
@@ -442,7 +451,6 @@
         </div>
       </div>
     </div>
-
   </main>
 
   <footer class="text-body-secondary py-5">
@@ -450,9 +458,9 @@
       <p class="float-end mb-1">
         <a href="#">Back to top</a>
       </p>
-      <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-      <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-          href="../getting-started/introduction/">getting started guide</a>.</p>
+      <p class="mb-1">LÁPIS RARO PAPELARIA LTDA. CNPJ: 42.973.230/0003-49.</p>
+      <p class="mb-0">Endereço: Avenida Coronel José Dias Bicalho, 187 - São Luiz - Pampulha - Belo Horizonte - MG CEP
+        31275-050</p>
     </div>
   </footer>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
