@@ -17,24 +17,74 @@
 		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
 		crossorigin="anonymous"></script>
 	<header>
-		<div class="logoImg">
-			<img src="logo.png" alt="Maria Chocolate" height="90" />
+		<div class="logo">
+			<img src="logo.png" alt="Maria Chocolate" height="100px" width="165px" />
 		</div>
 		<div class="titulo">
 			<h2>Confeitando para a alegria da sua vida...</h2>
 		</div>
 	</header>
 	<nav>
-		<ul class="list-group list-group-horizontal">
-			<a class="list-group-item" href="#">Home</a>
-			<a class="list-group-item" href="#">Bolos</a>
-			<a class="list-group-item" href="#">Tortas</a>
-			<a class="list-group-item" href="#">Festas</a>
-			<a class="list-group-item" href="#">Contatos</a>
-		</ul>
+		<div class="menu">
+			<p><a class="link-light link-offset-2" href="confeitaria.html"> Home </a> <a
+					class="link-light link-offset-2" href="bolos.html"> Bolos </a> <a class="link-light link-offset-2"
+					href="tortas.html"> Tortas </a>
+				<a class="link-light link-offset-2" href="festas.html"> Festas </a> <a class="link-light link-offset-2"
+					href="contatos.html"> Contato </a>
+			</p>
+		</div>
 	</nav>
 	<main>
-		
+		<div class="container-md">
+			<form class="row">
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="validationDefault01" class="form-label">Nome</label>
+						<input type="text" class="form-control" id="validationDefault01" required>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="inputEmail4" class="form-label">Email</label>
+						<input type="email" class="form-control" id="inputEmail4">
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="inputState" class="form-label">Motivo contato:</label>
+						<select id="inputState" class="form-select">
+							<option selected>Escolher...</option>
+							<option>Perguntas</option>
+							<option>Compras</option>
+							<option>Reclamações</option>
+							<option>Problemas com compra</option>
+							<option>Outro</option>
+						</select>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Quero receber mensagens deliciosas!
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<button class="btn btn-primary" type="submit">Enviar</button>
+					</div>
+				</div>
+			</form>
+		</div>
 	</main>
 	<footer>
 		<p>Desenvolvido como exercício da UC Usabilidade, Desenvolvimento Web, Mobile e Jogos. ©Copyright 2022.

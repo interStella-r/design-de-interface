@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hinata</title>
+    <meta chatset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <style>
+        html,
+        body {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        #caixa {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        @keyframes fundo {
+            0% {
+                background-color: red;
+            }
+
+            14% {
+                background-color: orangered;
+            }
+
+            28% {
+                background-color: yellow;
+            }
+
+            42% {
+                background-color: green;
+            }
+
+            56% {
+                background-color: blue;
+            }
+
+            70% {
+                background-color: magenta;
+            }
+
+            100% {
+                background-color: rgb(49, 0, 128);
+            }
+
+
+        }
+
+        body {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: fundo;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body onkeydown="movimentar(event)">
+    <div id="caixa"><img src="hinata.jpg" alt="hinata"></div>
+    <script>
+        var deslocamento_horizontal = 0;
+        var deslocamento_vertical = 0;
+        function movimentar(event) {
+            const tecla = event.key;
+            if (tecla == 'ArrowUp')
+                subir();
+            if (tecla == 'ArrowDown')
+                descer();
+            if (tecla == 'ArrowLeft')
+                voltar();
+            if (tecla == 'ArrowRight')
+                avancar();
+        }
+        function subir() {
+
+            deslocamento_vertical -= 20;
+            caixa.style.marginTop = `${deslocamento_vertical}px`;
+        }
+        function descer() {
+            deslocamento_vertical += 20;
+            caixa.style.marginTop = `${deslocamento_vertical}px`;
+        }
+        function voltar() {
+            deslocamento_horizontal -= 20;
+            caixa.style.marginLeft = `${deslocamento_horizontal}px`;
+        }
+        function avancar() {
+            deslocamento_horizontal += 20;
+            caixa.style.marginLeft = `${deslocamento_horizontal}px`;
+        }
+    </script>
+    </div>
+</body>
+
+</html>
