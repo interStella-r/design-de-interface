@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro | Papelaria VanGogh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        main {
+            margin: 1rem 2.5rem;
+            padding: 1rem;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        .card {
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <header></header>
+    <main>
+        <div class="container-fluid">
+            <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary margin" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Pessoa Física</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                    aria-controls="multiCollapseExample2">Pessoa Juridíca</button>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card" style="width: 37rem;">
+                            <h5>Dados Pessoais</h5>
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputname4" class="form-label">Nome Completo</label>
+                                    <input type="text" class="form-control" id="inputname4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputbirthday4" class="form-label">Data de Nascimento</label>
+                                    <input type="date" class="form-control" id="inputbirthday4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputcpf4" class="form-label">CPF</label>
+                                    <input type="number" class="form-control" id="inputcpf4">
+                                </div>
+                                <h6>Informe ao menos um telefone</h6>
+                                <div class="col-md-6">
+                                    <label for="inputcpf4" class="form-label">Telefone Fixo (DDD + Número)</label>
+                                    <input type="tel" class="form-control" id="inputcpf4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputcpf4" class="form-label">Celular (DDD + Número)</label>
+                                    <input type="tel" class="form-control" id="inputcpf4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Digite novamente o Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Desejo receber emails promocionais
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Crie uma senha</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Digite novamente a senha</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <h5>Dados de Entrega</h5>
+                                <div class="col-10">
+                                    <label for="inputAddress" class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputnumber" class="form-label">Nº</label>
+                                    <input type="number" class="form-control" id="inputnumero">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputcomplemento" class="form-label">Complemento</label>
+                                    <input type="text" class="form-control" id="inputcomplemento">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputbairro" class="form-label">Bairro</label>
+                                    <input type="text" class="form-control" id="inputbairro">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">Cidade</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label">Estado</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>MG</option>
+                                        <option>AC</option>
+                                        <option>AL</option>
+                                        <option>AP</option>
+                                        <option>AM</option>
+                                        <option>BA</option>
+                                        <option>CE</option>
+                                        <option>DF</option>
+                                        <option>ES</option>
+                                        <option>GO</option>
+                                        <option>MA</option>
+                                        <option>MT</option>
+                                        <option>MS</option>
+                                        <option>PA</option>
+                                        <option>PB</option>
+                                        <option>PR</option>
+                                        <option>PE</option>
+                                        <option>PI</option>
+                                        <option>RJ</option>
+                                        <option>RN</option>
+                                        <option>RS</option>
+                                        <option>RO</option>
+                                        <option>RR</option>
+                                        <option>SC</option>
+                                        <option>SP</option>
+                                        <option>SE</option>
+                                        <option>TO</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputZip" class="form-label">CEP</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Criar conta</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card" style="width: 37rem;">
+                            <h5>Dados da Empresa</h5>
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputrazaosocial4" class="form-label">Razão Social*</label>
+                                    <input type="text" class="form-control" id="inputrazaosocial4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputestadual4" class="form-label">Inscrição Estadual*</label>
+                                    <input type="text" class="form-control" id="inputestadual4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputcnpj4" class="form-label">CNPJ*</label>
+                                    <input type="number" class="form-control" id="inputcpnj4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputnome4" class="form-label">Nome Completo*</label>
+                                    <input type="text" class="form-control" id="inputnome4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputnome4" class="form-label">Data de Nascimento (Opcional)</label>
+                                    <input type="date" class="form-control" id="inputnome4">
+                                </div>
+                                <h6>Informe ao menos um telefone</h6>
+                                <div class="col-md-6">
+                                    <label for="inputcpf4" class="form-label">Telefone Fixo (DDD + Número)</label>
+                                    <input type="tel" class="form-control" id="inputcpf4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputcpf4" class="form-label">Celular (DDD + Número)</label>
+                                    <input type="tel" class="form-control" id="inputcpf4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Digite novamente o Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Desejo receber emails promocionais
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Crie uma senha</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Digite novamente a senha</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <h5>Dados de Entrega</h5>
+                                <div class="col-10">
+                                    <label for="inputAddress" class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputnumber" class="form-label">Nº</label>
+                                    <input type="number" class="form-control" id="inputnumero">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputcomplemento" class="form-label">Complemento</label>
+                                    <input type="text" class="form-control" id="inputcomplemento">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputbairro" class="form-label">Bairro</label>
+                                    <input type="text" class="form-control" id="inputbairro">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">Cidade</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label">Estado</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>MG</option>
+                                        <option>AC</option>
+                                        <option>AL</option>
+                                        <option>AP</option>
+                                        <option>AM</option>
+                                        <option>BA</option>
+                                        <option>CE</option>
+                                        <option>DF</option>
+                                        <option>ES</option>
+                                        <option>GO</option>
+                                        <option>MA</option>
+                                        <option>MT</option>
+                                        <option>MS</option>
+                                        <option>PA</option>
+                                        <option>PB</option>
+                                        <option>PR</option>
+                                        <option>PE</option>
+                                        <option>PI</option>
+                                        <option>RJ</option>
+                                        <option>RN</option>
+                                        <option>RS</option>
+                                        <option>RO</option>
+                                        <option>RR</option>
+                                        <option>SC</option>
+                                        <option>SP</option>
+                                        <option>SE</option>
+                                        <option>TO</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputZip" class="form-label">CEP</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Criar conta</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

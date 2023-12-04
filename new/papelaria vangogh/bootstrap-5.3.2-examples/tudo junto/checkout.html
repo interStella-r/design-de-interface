@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.118.2">
+  <title>Checkout | Papelaria VanGogh</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="checkout.css" rel="stylesheet">
+</head>
+
+<body class="bg-body-tertiary">
+  <div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="logobranca.png" alt="" width="160" height="70">
+        <h2>Finalizar Compra</h2>
+        <p class="lead">Verifique se colocou todos os produtos desejados no carrinho. Confira seus dados pessoais e
+          preencha os dados para o pagamento.</p>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-light">Seu Carrinho</span>
+            <span class="badge bg-secondary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Brush Pen Pastel 20 Unidades NEWPEN</h6>
+                <small class="text-body-secondary">1x</small>
+              </div>
+              <span class="text-body-secondary">R$118,90</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Régua 30CM POP DELLO Tons Pastéis</h6>
+                <small class="text-body-secondary">Amarelo - 1x</small>
+              </div>
+              <span class="text-body-secondary">R$3,00</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Giz Pastel Óleo com 24 Cores Maxi 11mm GIOTTO</h6>
+                <small class="text-body-secondary">1x</small>
+              </div>
+              <span class="text-body-secondary">R$31,90</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+              <div class="text-success-emphasis">
+                <h6 class="my-0">Cupom de Desconto</h6>
+                <small>D3SC0NT0</small>
+              </div>
+              <span class="text-success-emphasis">−$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (BR)</span>
+              <strong>R$149,80</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Cupom">
+              <button type="submit" class="btn btn-secondary">Resgatar</button>
+            </div>
+          </form>
+          <hr class="my-4">
+          <div class="list-group">
+            <label class="list-group-item d-flex gap-2">
+              <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios1" value="" checked>
+              <span>
+                SEDEX (1 dia útil)
+                <small class="d-block text-body-secondary">R$18,79</small>
+              </span>
+            </label>
+            <label class="list-group-item d-flex gap-2">
+              <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios2" value="">
+              <span>
+                PAC (2 dias úteis)
+                <small class="d-block text-body-secondary">R$7,50</small>
+              </span>
+            </label>
+            <label class="list-group-item d-flex gap-2">
+              <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3" value="">
+              <span>
+                Transportadora (3 dias úteis)
+                <small class="d-block text-body-secondary">R$1,90</small>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-8">
+
+          <div class="card" style="width: 38rem;">
+            <div class="card-body">
+              <h5 class="card-title">Dados</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Informações Pessoais</h6>
+              <p class="card-text">Fulano da Silva <br> fulanodasilva12@gmail.com <br> (31) 92324-5473</p>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Endereço de Entrega</h6>
+              <p class="card-text">Rua Ciclano 405, Novo Amanhã - Belo Horizonte | MG <br>31 089-453</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">Shipping address is the same as my billing
+              address</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Save this information for next time</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Pagamento</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Cartão de Crédito</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Cartão de Débito</label>
+            </div>
+            <div class="form-check">
+              <input id="pix" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="pix">Pix</label>
+            </div>
+            <div class="form-check">
+              <input id="boleto" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="boleto">Boleto</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Nome no cartão</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-body-secondary">Nome escrito exatamente como está no cartão</small>
+              <div class="invalid-feedback">
+                Nome inválido
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Número escrito no cartão</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Número inválido
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Validade</label>
+              <input type="date" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Data de Validade inválida
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="cc-cvv" class="form-label">Código de Segurança</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Necessário Código de Segurança
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Pagar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+      <p class="mb-1">&copy;2023 Papelaria VanGogh</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacidade</a></li>
+        <li class="list-inline-item"><a href="#">Termos de Uso</a></li>
+        <li class="list-inline-item"><a href="#">Contato</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="checkout.js"></script>
+</body>
+
+</html>
